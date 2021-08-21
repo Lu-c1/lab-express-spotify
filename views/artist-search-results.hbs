@@ -1,0 +1,16 @@
+<link href="../styles/styleArtists.css" rel="stylesheet">
+<ul class="artistlist">
+    {{#each artists}}
+<li class ="artist-info">
+        
+    <img src="{{this.images.0.url}}" alt="{{this.name}} image">
+<div class="bottom">
+     <h1>{{this.name}}</h1>   
+    
+    <button type="" class = "btn-link">
+        <a href="/albums/{{this.id}}" class="link" >View Albums</a>
+    </button>
+</div>
+</li>
+    {{/each}}
+</ul>

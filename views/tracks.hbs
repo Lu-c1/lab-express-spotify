@@ -1,0 +1,15 @@
+<ul>
+  {{#each tracks}}
+    <li>
+      <h5>{{this.name}}</h5>
+      {{#if this.preview_url}}
+        <audio controls>
+          <source src="{{this.preview_url}}" type="audio/mpeg" />
+          your browser doesn¨t support awesomeness.
+        </audio>
+      {{else}}
+        <p>Sorry,no preview for you.</p>
+      {{/if}}
+    </li>
+  {{/each}}
+</ul>

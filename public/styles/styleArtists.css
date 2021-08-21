@@ -1,0 +1,50 @@
+        body {
+            margin: 0;
+            background-color: pink;
+        }
+        
+        h1 {
+            font-size: 16px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            color: white;
+        }
+        
+        .artistlist img {
+            display: flex;
+            flex-direction: column;
+            margin-top: 20px;
+            width: 300px;
+            height: 300px;
+        }
+        
+        .artist-info {
+            display: flex;
+            flex-direction: column;
+            align-items: baseline;
+        }
+        
+        .btn-link {
+            display: flex;
+            background-color: rgba(255, 0, 0, 0.503);
+            border: none;
+            border-radius: 5px;
+            text-align: center;
+            width: 100px;
+            padding: 8px;
+        }
+        
+        .bottom {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background-color: grey;
+            width: 300px;
+            font-weight: 600;
+        }
+        
+        .link {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+        }

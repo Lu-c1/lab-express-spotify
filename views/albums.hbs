@@ -1,0 +1,20 @@
+<link href="../styles/styleAlbums.css" rel="stylesheet">
+<ul class="albumlist">
+
+    {{#each albums}}
+<li class="album-info"> 
+
+   {{#if this.images}}
+    <img src= "{{this.images.0.url}}" alt="{{this.name}} image"/>
+   {{/if}}
+
+<div class="bottom">
+   <h1>{{this.name}}</h1>
+
+   <button type="" class = "button-link">
+    <a href="/tracks/{{this.id}}" class="link">View Tracks</a>
+   </button>
+   </div>
+</li>
+{{/each}}
+</ul>
